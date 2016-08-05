@@ -1,0 +1,25 @@
+{
+  "name": "react-outside",
+  "version": "1.0.0",
+  "description": "A higher order component for React for listening to clicks outside of the component. Supports classes and decorators.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbovey/react-outside.git"
+  },
+  "keywords": [
+    "react",
+    "outside",
+    "click",
+    "event"
+  ],
+  "author": "Dan Bovey <dan@danbovey.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danbovey/react-outside/issues"
+  },
+  "homepage": "https://github.com/danbovey/react-outside#readme"
+}
