@@ -2,9 +2,11 @@
   "name": "react-outside",
   "version": "1.0.0",
   "description": "A higher order component for React for listening to clicks outside of the component. Supports classes and decorators.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "mkdir -p dist && babel src/index.js --presets es2015,react --plugins add-module-exports --out-file dist/index.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/danbovey/react-outside/issues"
   },
-  "homepage": "https://github.com/danbovey/react-outside#readme"
+  "homepage": "https://github.com/danbovey/react-outside#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.13.1",
+    "babel-preset-react": "^6.11.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  }
 }
