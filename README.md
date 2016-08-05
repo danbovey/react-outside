@@ -2,7 +2,7 @@ React Outside
 =======================
 
 [![npm](https://img.shields.io/npm/dt/react-outside.svg?style=flat-square)](https://www.npmjs.com/package/react-outside)
-[![React Version](https://img.shields.io/badge/React-%5E15.01-blue.svg?style=flat-square)](https://www.npmjs.com/package/react)
+[![React Version](https://img.shields.io/badge/React-%5E15.0.1-blue.svg?style=flat-square)](https://www.npmjs.com/package/react)
 [![npm](https://img.shields.io/npm/v/react-outside.svg?style=flat-square)](https://www.npmjs.com/package/react-outside)
 [![npm](https://img.shields.io/npm/l/react-outside.svg?style=flat-square)](https://github.com/danbovey/react-outside/blob/master/LICENSE)
 
