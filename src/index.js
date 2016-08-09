@@ -12,15 +12,21 @@ function clickOutside(config) {
 
     return function(Target) {
         return class ClickOutside extends Component {
+            constructor(props) {
+                super(props);
+
+                this.handleClickOutside = this.handleClickOutside.bind(this);
+            }
+
             componentDidMount() {
                 config.events.forEach(eventName => {
-                    document.addEventListener(eventName, this.handleClickOutside.bind(this), true);
+                    document.addEventListener(eventName, this.handleClickOutside, true);
                 });
             }
 
             componentWillUnmount() {
                 config.events.forEach(eventName => {
-                    document.removeEventListener(eventName, this.handleClickOutside.bind(this), true);
+                    document.removeEventListener(eventName, this.handleClickOutside, true);
                 });
             }
 

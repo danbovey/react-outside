@@ -37,10 +37,13 @@ function clickOutside(config) {
         return function (_Component) {
             _inherits(ClickOutside, _Component);
 
-            function ClickOutside() {
+            function ClickOutside(props) {
                 _classCallCheck(this, ClickOutside);
 
-                return _possibleConstructorReturn(this, Object.getPrototypeOf(ClickOutside).apply(this, arguments));
+                var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ClickOutside).call(this, props));
+
+                _this.handleClickOutside = _this.handleClickOutside.bind(_this);
+                return _this;
             }
 
             _createClass(ClickOutside, [{
@@ -49,7 +52,7 @@ function clickOutside(config) {
                     var _this2 = this;
 
                     config.events.forEach(function (eventName) {
-                        document.addEventListener(eventName, _this2.handleClickOutside.bind(_this2), true);
+                        document.addEventListener(eventName, _this2.handleClickOutside, true);
                     });
                 }
             }, {
@@ -58,7 +61,7 @@ function clickOutside(config) {
                     var _this3 = this;
 
                     config.events.forEach(function (eventName) {
-                        document.removeEventListener(eventName, _this3.handleClickOutside.bind(_this3), true);
+                        document.removeEventListener(eventName, _this3.handleClickOutside, true);
                     });
                 }
             }, {
