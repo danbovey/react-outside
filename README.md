@@ -6,7 +6,9 @@ React Outside
 [![npm](https://img.shields.io/npm/v/react-outside.svg?style=flat-square)](https://www.npmjs.com/package/react-outside)
 [![npm](https://img.shields.io/npm/l/react-outside.svg?style=flat-square)](https://github.com/danbovey/react-outside/blob/master/LICENSE)
 
-A higher order component for React for listening to clicks outside of the component. Supports classes and decorators.
+Wraps a react component and listens for clicks outside of the element.
+
+Can be used as a [higher-order component](http://babeljs.io/blog/2015/06/07/react-on-es6-plus/#property-initializers) or as an [ES7 class decorator](https://github.com/wycats/javascript-decorators)
 
 ## Installation
 
@@ -17,10 +19,6 @@ A higher order component for React for listening to clicks outside of the compon
 ## API
 
 ### clickOutside([config])(MyComponent)
-
-Wraps a react component and listens for clicks outside of the element.
-
-Can be used as a [higher-order component](http://babeljs.io/blog/2015/06/07/react-on-es6-plus/#property-initializers) or as an [ES7 class decorator](https://github.com/wycats/javascript-decorators)
 
 **Parameters**
 
