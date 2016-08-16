@@ -8,7 +8,7 @@ React Outside
 
 Wraps a react component and listens for clicks outside of the element.
 
-Can be used as a [higher-order component](http://babeljs.io/blog/2015/06/07/react-on-es6-plus/#property-initializers) or as an [ES7 class decorator](https://github.com/wycats/javascript-decorators)
+Can be used as a [higher-order component](http://babeljs.io/blog/2015/06/07/react-on-es6-plus#property-initializers) or as an [ES7 class decorator](https://github.com/wycats/javascript-decorators)
 
 ## Installation
 
