@@ -14,36 +14,56 @@ A higher order component for React for listening to clicks outside of the compon
   npm i react-outside
 ```
 
-## How to use
+## API
 
-### Config
+### clickOutside([config])(MyComponent)
+
+Wraps a react component and listens for clicks outside of the element.
+
+Can be used as a [higher-order component](http://babeljs.io/blog/2015/06/07/react-on-es6-plus/#property-initializers) or as an [ES7 class decorator](https://github.com/wycats/javascript-decorators)
+
+**Parameters**
+
+-   `config` **object**
+    -   `config.events` **array**
+
+## Examples
 
 ```js
-/**
- * @param {Object} config Configuration for the events.
- * @return {Component}
- */
- ```
-
-### Usage
-
-```js
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// ES7
+import React from 'react';
 import clickOutside from 'react-outside';
 
-@clickOutside(['mousedown']) // `click` is the default handler but you can set different event names
-export default class DropdownMenu extends Component {
-	handleClickOutside(e) {
-		// Handle the event
-	}
-
-	render() {
-		return (
-			<ul className="dropdown-menu">
-				<li>List items...</li>
-			</ul>
-		);
-	}
+@clickOutside() // Enhanced component
+class MyComponent extends React.Component {
+    handleClickOutside() {
+        // Handle the event
+    }
+    render() {
+        <ul className="dropdown-menu">
+            <li>List items...</li>
+        </ul>
+    }
 }
+
+export default MyComponent; // Component is exported with `clickOutside` decorator
+```
+
+```js
+// ES5
+var React = require('react');
+var clickOutside = require('react-outside');
+
+class MyComponent extends React.Component {
+    handleClickOutside() {
+        // Handle the event
+    }
+    render() {
+        <ul className="dropdown-menu">
+            <li>List items...</li>
+        </ul>
+    }
+}
+
+export default clickOutside()(MyComponent); // Enhanced component
 ```
